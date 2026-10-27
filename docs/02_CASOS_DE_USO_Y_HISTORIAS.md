@@ -624,3 +624,5 @@ Cada fila es una prueba. Se llama a la ruta con el rol indicado y se comprueba e
 4. Módulo 5 (inventory).
 5. Módulo 6 (sales): es el más complejo, por la transacción.
 6. Módulo 7 (reports).
+
+test github
