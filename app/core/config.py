@@ -2,6 +2,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 from urllib.parse import quote_plus
 
 
+#Crea la clase Settings para manejar la configuracion de la aplicacion.
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env")
     
