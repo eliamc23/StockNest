@@ -1,6 +1,6 @@
 from sqlalchemy.orm import DeclarativeBase
 
-#Crea la clase base para los modelos de la base de datos.
+#The Base class is the declarative base for all database models.
 class Base(DeclarativeBase):
     pass
 

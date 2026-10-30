@@ -3,14 +3,14 @@ from sqlalchemy.orm import sessionmaker
 from app.core.config import settings
 
 
-#Crea el motor de la base de datos.
+#Creates the database engine.
 engine = create_engine(settings.database_url)
 
 
-#Crea una clase de sesion de base de datos.
+#Creates a sessionmaker that will be used to create database sessions.
 SessionLocal = sessionmaker(bind=engine)
 
-#La funcion get_db() crea una sesion de base de datos y la cierra al finalizar.
+#The get_db() function creates a database session and closes it when finished.
 def get_db():
     db = SessionLocal()
     try:

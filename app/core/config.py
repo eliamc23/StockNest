@@ -2,7 +2,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 from urllib.parse import quote_plus
 
 
-#Crea la clase Settings para manejar la configuracion de la aplicacion.
+#The Settings class is a configuration class that inherits from BaseSettings. It defines various settings for the application, including database settings and JWT settings. The class also includes a property method to generate the database URL based on the provided settings.
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env")
     
